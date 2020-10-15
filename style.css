@@ -1,8 +1,13 @@
 *{
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
     font-family: 'Poppins', sans-serif;
+}
+a {
+    text-decoration: none;
 }
 header{
     top: 0;
@@ -13,9 +18,10 @@ header{
     background-color:rgba(193,234,234, 1);
 }
 .container{
+    max-width: 1170px;
+    width: 100%;
     padding: 0 15px;
     margin: 0 auto;
-    width: 1170px;
 }
 .header-left{
     margin: 20px;
@@ -32,7 +38,7 @@ header{
     margin: 0px;
 }
 .header-right a{
-    color: black;
+    color: #000;
     margin: 0px 10px;
     font-size: 17px;
     text-decoration: none;
@@ -42,38 +48,41 @@ header{
 }
 
 .header-right a:hover{
+    color:#1289a7;
     transform: translateY(-10px);
 }
-/* ======================================================================================================== */
-/* Top Wrapper */
+
+.menu-icon {
+    color: #000;
+    float: right;
+    font-size: 25px;
+    display: none;
+  }
 
 .top-wrapper{
     padding: 220px 0 100px 0;
     color: black;
-    background-image: url("beach1.jpg");
+    background-image: url("img/bali.jpg");
     background-size: cover;
     min-height: 100vh;
 }
 .top-wrapper h1{
-    font-size: 48px;
+    font-size: 56px;
     margin-bottom: 20px;
     border-bottom: 2px solid black;
-    width: 21%;
+    width: 25%;
 }
 .top-wrapper p{
     font-size: 20px;
     margin-bottom: 20px;
     width: 50%;
 }
-.top-wrapper a{
-    text-decoration: none;
-}
 .btn{
     padding: 12px 24px;
     color: white;
     display: inline-block;
-    border-radius: 4px;
-    opacity: 0.6;
+    border-radius: 40px;
+    opacity: 0.8;
     transition: all 0.5s;
 }
 .btn:hover{
@@ -83,3 +92,124 @@ header{
     background-color:rgba(18,137,167);
 }
 
+.title {
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+.title h2 {
+    font-size: 34px;
+}
+
+/* Travel-wrapper */
+.travel-wrapper {
+    padding: 0 5% 80px;
+    text-align: center;
+    min-height: 670px;
+}
+.travel-wrapper .travel {
+    float: left;
+    width: 30%;
+}
+.travel-wrapper .travel {
+    background-size: cover;
+    background-position: center, center;
+    min-height: 300px;
+    padding: 20px;
+    color: #fff;
+    margin-bottom: 30px;
+    margin-right: 1.5%;
+    margin-left: 1.5%;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+.travel-wrapper .travel:hover {
+    margin-top: -10px;
+    color: #1289a7;
+
+}
+.travel-wrapper .travel .travel-text {
+    margin-top: 75%;
+    font-size: 20px;
+    font-weight: bold;
+    float: left;
+}
+.travel-wrapper .travel .travel-view {
+    margin-top: 75%;
+    font-size: 18px;
+    float: left;
+}
+.travel-wrapper .travel .travel-view .view{
+    padding: 7px 10px;
+    font-size: 14px;
+    margin-left: 20px;
+    background-color: #fff;
+    color: #1289a7;
+    border-radius: 15px;
+}
+
+/* About Traveller */
+.about-wrapper{
+    padding: 0 5% 80px;
+    min-height: 670px;
+}
+.title-about-wrapper{
+    float: left;
+    padding-top: 170px;
+    width: 40%;
+    text-align: justify;
+}
+.about-image-wrapper{
+    float: right;
+    width: 60%;
+    position: relative;
+    
+}
+.aboutimg{
+    position: absolute;
+    top: 180px;
+    right: 16px;
+    width: 500px;
+    border-radius: 9px;
+}
+
+.about-icon-socialmedia{
+    float: left;
+
+}
+.about-icon-socialmedia img{
+    width: 40px;
+    margin: 20px 10px 0px 10px;
+}
+.about-icon-socialmedia a{
+    display: inline-block;
+}
+
+
+/* Footer */
+footer{
+    min-height: 30vh;
+    width: 100%;
+    border-top: solid whitesmoke 3px;
+}
+.firstparagraph{
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.firstparagraph1{
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 40px;
+}
+.secondparagraph{
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+.logoprogate{
+    width: 150px;
+    margin: 0 auto;
+    display: block;
+    padding-bottom: 10px;
+}
